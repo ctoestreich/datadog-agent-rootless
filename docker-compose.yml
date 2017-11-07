@@ -1,0 +1,8 @@
+version: '3'
+services:
+  dd-agent:
+    image: dd-docker-rootless:latest
+    environment:
+      - API_KEY=xxxxxxxxxxxxxx
+      - DD_HOSTNAME=dd-docker-rootless
+      - DD_TAGS=custom:foo,bar,baz,environment:demo
