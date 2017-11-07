@@ -27,19 +27,18 @@ To run using docker compose simply run the `./run.sh` script to get you started 
 
 When deploying your container from a PaaS like OpenShift, make sure to set something like the following in your deployment configuration
 
-```yml
+``` yaml
 # ...
-	env:
-		-
-			name: API_KEY
-			value: xxxxxxxx
-		-
-			name: DD_HOSTNAME
-			value: optional_custom_name
-		-
-			name: DD_TAGS
-			value: custom:foo,bar,baz,environment:demo 
-		# ...
+  env:
+    -
+      name: API_KEY
+      value: xxxxxxxx
+    -
+      name: DD_HOSTNAME
+      value: optional_custom_name
+    -
+      name: DD_TAGS
+      value: custom:foo,bar,baz,environment:demo
 # ...
 ``` 
 
