@@ -1,3 +1,8 @@
 #!/usr/bin/env bash
 
-docker build -t dd-docker-rootless .
+cd centos-base
+./build.sh
+cd ..
+cd docker-dd-base
+./build.sh
+cd ..

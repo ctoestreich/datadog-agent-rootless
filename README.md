@@ -10,6 +10,11 @@ There are a few scripts to help test this configuration out.  The first thing yo
 
 Refer to the information located at the following for more details as this image extends this base: https://github.com/DataDog/docker-dd-agent
 
+I have included 2 examples
+
+1. **centos-base** - This extends centos base and installs the agent via a curl command.  This is useful if you have your own base image.
+2. **docker-dd-base** - This extends the base docker image.
+
 ### Docker
 
 To build the image you can use run the `./build.sh` script to get you started or simply run some variant of the following command that meets your needs `docker build -t dd-docker-rootless .`

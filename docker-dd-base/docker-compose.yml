@@ -1,11 +1,5 @@
 version: '3'
 services:
-  dd-centos-rootless:
-    image: dd-centos-rootless:latest
-    environment:
-      - API_KEY=xxxxxxxxxxxxxx
-      - DD_HOSTNAME=dd-docker-rootless
-      - DD_TAGS=custom:foo,bar,baz,environment:demo
   dd-docker-rootless:
     image: dd-docker-rootless:latest
     environment:
